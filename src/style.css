@@ -1,0 +1,160 @@
+button {
+  background-color: transparent;
+}
+
+/* button {
+  border-radius: 50%;
+  padding: 7px 7px 2px 7px;
+  background-color: white;
+}
+button:hover {
+  color: red;
+  border: 1px solid red;
+} */
+
+/* a:hover {
+  color: white;
+  text-shadow: 2px 2px 2px rgb(39, 61, 84);
+  font-weight: 600;
+} */
+
+footer {
+  font-family: "Poiret One", cursive;
+  text-align: center;
+  color: rgb(212, 238, 251);
+  font-size: 12px;
+  padding-top: 9px;
+}
+p {
+  margin: 0;
+}
+
+.container,
+.week-forecast,
+.city-search,
+.submit-button,
+button {
+  border-radius: 10px;
+}
+.icon,
+.country {
+  text-align: right;
+  font-weight: 600;
+  font-size: 50px;
+  padding: 0;
+}
+.icon,
+.country,
+.today-text,
+.day-forecast-text,
+.extra-info,
+.week-forecast,
+.temperature-type,
+a {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(39, 61, 84);
+}
+.today-text,
+.day-forecast-text {
+  padding: 0px 30px;
+}
+.temperature,
+.forecast {
+  font-weight: 600;
+  font-style: italic;
+}
+.city-search,
+.submit-button,
+button {
+  border: 1px solid rgb(42, 98, 150);
+}
+/* .submit-button, */
+.city-search,
+.submit-button,
+button {
+  font-family: "Kaushan Script", cursive;
+  padding: 5px 10px 5px 5px;
+}
+
+.container {
+  margin: 50px auto;
+  padding: 60px 90px 40px 90px;
+  max-width: 1000px;
+  border: 3px solid rgb(42, 98, 150);
+  background-image: url("../images/hills.jpg");
+  background-size: cover;
+}
+.city-search {
+  width: 500px;
+}
+.country {
+  font-weight: 100;
+}
+.cloudy {
+  margin: 35px;
+  font-size: 110px;
+  text-align: center;
+}
+.day-forecast {
+  padding: 23px;
+  padding-bottom: 42px;
+}
+.extra-info {
+  opacity: 70%;
+  font-size: 14px;
+  line-height: 18px;
+}
+.forecast {
+  line-height: 46px;
+  font-size: 29px;
+}
+.heart {
+  font-size: 20px;
+}
+
+.submit-button {
+  background-color: white;
+}
+.submit-button:hover,
+button:hover {
+  border: 1px solid orange;
+  color: orange;
+}
+.today-text {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 25px;
+}
+.temperature {
+  font-size: 88px;
+  line-height: 77px;
+}
+.temperature-type {
+  font-size: 23px;
+  position: relative;
+  top: -45px;
+  left: 5px;
+}
+.top {
+  text-align: center;
+}
+.week-forecast {
+  font-size: 17px;
+  font-weight: 900;
+  padding: 20px 0px;
+  text-align: center;
+  background-color: rgba(39, 61, 84, 0.2);
+  border: 3px solid rgba(255, 255, 255);
+}
+.temp-range {
+  color: white;
+  font-weight: 100;
+}
+strong {
+  font-weight: 900;
+}
+.weather-icons {
+  padding: 15px;
+  font-size: 35px;
+  color: white;
+}
