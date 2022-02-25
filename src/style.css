@@ -108,6 +108,9 @@ button {
   line-height: 46px;
   font-size: 29px;
 }
+.footer {
+  color: rgb(212, 238, 251);
+}
 .heart {
   font-size: 20px;
 }
