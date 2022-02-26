@@ -40,14 +40,6 @@ currentTime.innerHTML = `${hour}:${min}`;
 let currentDate = document.querySelector("#day-month");
 currentDate.innerHTML = `${day}, ${date} ${month} ${year}`;
 
-//To disable the Celcius link
-function celcius() {
-  event.preventDefault();
-}
-
-let celciusHref = document.querySelector("#celcius");
-celciusHref.addEventListener("click", celcius);
-
 //Add a search engine, when searching for a city (i.e. Paris), display the city name on the page after the user submits the form.
 function getTemperature(response) {
   console.log(response);
@@ -55,11 +47,27 @@ function getTemperature(response) {
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind-speed").innerHTML = response.data.wind.speed;
   document.querySelector("#country").innerHTML = response.data.name;
-  document.querySelector("#temp").innerHTML = Math.round(
+  let degTemp = (document.querySelector("#temp").innerHTML = Math.round(
     response.data.main.temp
-  );
+  ));
   document.querySelector("#sky-condition").innerHTML =
     response.data.weather[0].main;
+
+  function celcius() {
+    event.preventDefault();
+    let temperature = document.querySelector("#temp");
+    temperature.innerHTML = degTemp;
+  }
+  function fahrenheitNew(event) {
+    event.preventDefault();
+    let temperature = document.querySelector("#temp");
+    temperature.innerHTML = Math.round((degTemp * 9) / 5 + 32);
+  }
+
+  let celciusHref = document.querySelector("#celcius");
+  celciusHref.addEventListener("click", celcius);
+  let fahrenheit = document.querySelector("#fahrenheit");
+  fahrenheit.addEventListener("click", fahrenheitNew);
 }
 
 function search(city) {

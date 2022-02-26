@@ -12,11 +12,11 @@ button:hover {
   border: 1px solid red;
 } */
 
-/* a:hover {
+a:hover {
   color: white;
   text-shadow: 2px 2px 2px rgb(39, 61, 84);
   font-weight: 600;
-} */
+}
 
 footer {
   font-family: "Poiret One", cursive;
