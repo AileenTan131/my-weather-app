@@ -51,7 +51,7 @@ function getTemperature(response) {
     response.data.main.temp
   ));
   document.querySelector("#sky-condition").innerHTML =
-    response.data.weather[0].main;
+    response.data.weather[0].description;
 
   function celcius() {
     event.preventDefault();
