@@ -52,6 +52,12 @@ function getTemperature(response) {
   ));
   document.querySelector("#sky-condition").innerHTML =
     response.data.weather[0].description;
+  let iconType = response.data.weather[0].icon;
+  let mainWeatherIcon = document.querySelector("#main-weather-icon");
+  mainWeatherIcon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${iconType}@2x.png`
+  );
 
   function celcius() {
     event.preventDefault();
