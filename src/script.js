@@ -54,20 +54,24 @@ function getTemperature(response) {
     response.data.weather[0].description;
   let iconType = response.data.weather[0].icon;
   let mainWeatherIcon = document.querySelector("#main-weather-icon");
+
   mainWeatherIcon.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${iconType}@2x.png`
   );
-
   mainWeatherIcon.setAttribute("alt", response.data.weather[0].description);
 
   function celcius() {
     event.preventDefault();
+    celciusHref.classList.add("active");
+    fahrenheit.classList.remove("active");
     let temperature = document.querySelector("#temp");
     temperature.innerHTML = degTemp;
   }
   function fahrenheitNew(event) {
     event.preventDefault();
+    celciusHref.classList.remove("active");
+    fahrenheit.classList.add("active");
     let temperature = document.querySelector("#temp");
     temperature.innerHTML = Math.round((degTemp * 9) / 5 + 32);
   }

@@ -1,4 +1,4 @@
-a:hover {
+.footer:hover {
   color: white;
   text-shadow: 2px 2px 2px rgb(39, 61, 84);
   font-weight: 600;
@@ -39,8 +39,7 @@ button {
 .day-forecast-text,
 .extra-info,
 .week-forecast,
-.temperature-type,
-a {
+.footer {
   font-family: "Open Sans", sans-serif;
   color: rgb(39, 61, 84);
 }
@@ -130,6 +129,21 @@ button:hover {
   position: relative;
   top: -45px;
   left: 5px;
+}
+.fahrenheit,
+.celcius {
+  color: rgb(61, 176, 218);
+  text-decoration: none;
+}
+.fahrenheit:hover,
+.celcius:hover {
+  color: white;
+  text-shadow: 1px 1px 1px rgb(39, 61, 84, 0.5);
+}
+.temperature-type .active {
+  text-decoration: none;
+  color: rgb(39, 61, 84);
+  cursor: default;
 }
 .top {
   text-align: center;
