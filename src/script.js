@@ -59,6 +59,8 @@ function getTemperature(response) {
     `http://openweathermap.org/img/wn/${iconType}@2x.png`
   );
 
+  mainWeatherIcon.setAttribute("alt", response.data.weather[0].description);
+
   function celcius() {
     event.preventDefault();
     let temperature = document.querySelector("#temp");
