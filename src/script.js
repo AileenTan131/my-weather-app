@@ -1,3 +1,26 @@
+function displayForecast() {
+  let forecastElement = document.querySelector("#row-week-forecast");
+  let forecastHTML = `<div class="row gx-0">`;
+  let days = ["WED", "THU", "FRI", "SAT", "SUN", "MON"];
+  function dailyForecast(day) {
+    forecastHTML =
+      forecastHTML +
+      ` <div class="col-2">
+            ${day}
+            <div>
+              <i class="fas fa-cloud-rain weather-icons"></i>
+            </div>
+            <span class="temp-range">
+              <strong> 30°C </strong>
+              / 26°C
+            </span>
+          </div>`;
+  }
+  days.forEach(dailyForecast);
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function formatDate(timestamp) {
   let days = [
     "Sunday",
@@ -123,3 +146,4 @@ currentButton.addEventListener("click", currentData);
 //In your project, display the current date and time using JavaScript: Tuesday 16:00
 
 search("New York");
+displayForecast();
