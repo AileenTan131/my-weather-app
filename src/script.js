@@ -6,7 +6,6 @@ function formatDay(timestamp) {
 }
 //Duplicating 7 days using an array, load 7 day forecast api
 function displayForecast(response) {
-  debugger;
   let forecastDay = response.data.daily;
   let forecastElement = document.querySelector("#row-week-forecast");
   let forecastHTML = `<div class="row gx-0">`;
@@ -86,7 +85,7 @@ function formatTime(timestamp) {
   return `${hour}:${min}`;
 }
 
-//Insert city/current location data into the innerHTMLs, convert between celcius & fahrenheit
+//Insert city/current location data into the innerHTMLs
 function getTemperature(response) {
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind-speed").innerHTML = response.data.wind.speed;
@@ -120,10 +119,6 @@ function getTemperature(response) {
     temperature.innerHTML = degTemp;
   }
 
-  let celciusHref = document.querySelector("#celcius");
-  celciusHref.addEventListener("click", celcius);
-  let fahrenheit = document.querySelector("#fahrenheit");
-  fahrenheit.addEventListener("click", fahrenheitNew);
   let currentTime = document.querySelector("#time");
   currentTime.innerHTML = formatTime(response.data.dt * 1000);
   let currentDate = document.querySelector("#day-month");
