@@ -73,9 +73,6 @@ button {
   background-image: url("../images/hills.jpg");
   background-size: cover;
 }
-.city-search {
-  width: 500px;
-}
 .country {
   font-weight: 100;
 }
@@ -167,4 +164,60 @@ strong {
   padding: 15px;
   font-size: 35px;
   color: white;
+}
+
+@media (min-width: 830px) {
+  .city-search {
+    width: 500px;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    padding: 60px 50px 40px 50px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    padding: 60px 20px 40px 20px;
+  }
+  .temperature {
+    font-size: 60px;
+  }
+  .temperature-type {
+    position: relative;
+    top: -24px;
+  }
+  .country {
+    font-size: 48px;
+  }
+  .forecast {
+    line-height: 31px;
+  }
+  .extra-info {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 300px) {
+  .forecast {
+    margin-top: -28px;
+  }
+  .country {
+    font-size: 43px;
+  }
+  .today-text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .temperature {
+    font-size: 55px;
+  }
+  .temperature-type {
+    font-size: 20px;
+    position: relative;
+    top: -63px;
+    left: 63px;
+  }
+  /* .container {
+    padding: 60px 0px 40px 0px;
+  } */
 }
