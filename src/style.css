@@ -176,6 +176,11 @@ strong {
     padding: 60px 50px 40px 50px;
   }
 }
+@media (max-width: 600px) {
+  .week-forecast img {
+    width: 80px;
+  }
+}
 @media (max-width: 500px) {
   .container {
     padding: 60px 20px 40px 20px;
@@ -196,8 +201,30 @@ strong {
   .extra-info {
     margin-top: 10px;
   }
+  .week-forecast img {
+    width: 75px;
+  }
 }
-@media (max-width: 300px) {
+@media (max-width: 377px) {
+  .temperature-type {
+    font-size: 20px;
+    position: relative;
+    top: -27px;
+    left: 4px;
+  }
+  .week-forecast img {
+    width: 63px;
+  }
+}
+@media (max-width: 370px) {
+  .temperature-type {
+    font-size: 20px;
+    position: relative;
+    top: -65px;
+    left: 73px;
+  }
+}
+@media (max-width: 350px) {
   .forecast {
     margin-top: -28px;
   }
@@ -217,7 +244,7 @@ strong {
     top: -63px;
     left: 63px;
   }
-  /* .container {
-    padding: 60px 0px 40px 0px;
-  } */
+  .week-forecast img {
+    width: 43px;
+  }
 }
